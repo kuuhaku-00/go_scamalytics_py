@@ -1,6 +1,6 @@
 # go-scamalytics (Python port)
 
-功能：从 scamalytics.com 抓取 IP 的 fraud score / risk（不使用官方 API），支持批量 CSV 导出。
+功能：从 [scamalytics.com](https://scamalytics.com/) 抓取 IP 的 fraud score / risk（不使用官方 API），支持批量 CSV 导出。
 
 
 
@@ -12,7 +12,36 @@
 
 
 
-### 无uv环境初始化
+### 安装uv
+
+无python环境
+
+```
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+有python环境
+
+```
+pip install uv
+# 或
+mamba install uv
+# 或
+conda install uv
+```
+
+安装后记得重新开一个终端
+
+验证
+
+```
+uv --version
+# 如果显示版本号，比如 uv 0.9.16 就说明安装成功
+```
+
+
+
+### 无uv虚拟环境初始化
 
 ```
 uv init
@@ -27,14 +56,11 @@ uv sync
 
 # 2. 激活虚拟环境
 uv shell
-
-# 3. 或者在虚拟环境中运行单条命令
-uv run python main.py
 ```
 
 
 
-### 创建ua.txt
+### 创建ua.txt（已经创建）
 
 ```
 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
