@@ -1,0 +1,17 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+
+# 手动添加
+/.idea/
+/ips.txt
+/ip取自.txt
+/results.csv

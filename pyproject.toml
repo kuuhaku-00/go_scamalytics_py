@@ -1,0 +1,11 @@
+[project]
+name = "go-scamalytics-py"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.12",
+    "requests>=2.28",
+    "tqdm>=4.65",
+]
